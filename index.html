@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+    <div>
+        <h1 id="título">Solicitação de contato</h1>
+        <p id="subtítulo">Complete suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            
+            <div class="campo">
+                <label for="sobrenome"> <strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email"> <strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+       
+        <div class="campo">
+            <label><strong>Qual o tipo de site que deseja?</strong></label>
+            <label>
+                <input type="radio" name="landingpage" value="landingpage" checked>Landing Page
+            </label>
+            <label>
+                <input type="radio" name="E-commerce" value="ecommerce">E-commerce
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Formulário
+            </label>
+            <label>
+                <input type="radio" name="outros" value="outros">Outros
+            </label>
+        </div>
+        <div class="campo">
+            <label for="Senioridade"> <strong>Tempo médio de projeto</strong></label>
+            <select id="Senioridade">
+            <option selected disabled value="">Selecione</option>    
+            <option>1 mês</option>
+            <option>2 meses</option>
+            <option>3 meses</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label> <strong>Selecione quais atributos são mais a sua cara!</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">Site com design completo</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">Inovação</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Algo mais padronizado</label>      
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label> <strong>Me conte um pouco sobre sua ideia:</strong></label>
+            <textarea name="experiência" style="width: 26em;" id="experiência" rows="6"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+
+    </form>
+</body>
+</html>
